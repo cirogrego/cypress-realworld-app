@@ -1,9 +1,10 @@
 describe('Real World app', () => {
-    
+
   it('Login - Success', () => {
     cy.visit('http://localhost:3000/signin')
-    cy.get('#username').type('cirogrego')
-    cy.get('#password').type('123456')
+    cy.get('#username').type('Dina20')
+    cy.get('#password').type('s3cret')
+    cy.get('[name="remember"]').click()
     cy.get('[data-test="signin-submit"]').click()
   })
 })

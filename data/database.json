@@ -195,6 +195,83 @@
       "balance": 0,
       "createdAt": "2025-07-01T18:37:03.709Z",
       "modifiedAt": "2025-07-01T18:37:03.709Z"
+    },
+    {
+      "id": "gVkg4Gkgr",
+      "uuid": "7b4cda71-c799-4fcf-9388-fa5d1f169f8e",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$VrH9eif2KdcVcx//d6Abqu5QFMWsdrE84g6A5WONvtHRXDJtFr1WS",
+      "balance": 0,
+      "createdAt": "2025-07-01T18:53:23.081Z",
+      "modifiedAt": "2025-07-01T18:53:23.081Z"
+    },
+    {
+      "id": "iYHkk2YaX",
+      "uuid": "1bec50fd-a20f-479c-90d9-cd02e0ea3e0d",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$LshSsEZRw/ktfQRzPdY9wuXtxwM6os2Ed3iGHDJ2f8ImKx1TIuvwO",
+      "balance": 0,
+      "createdAt": "2025-07-01T18:55:53.364Z",
+      "modifiedAt": "2025-07-01T18:55:53.364Z"
+    },
+    {
+      "id": "kNu6gd9bw",
+      "uuid": "04f5cb04-4f88-4f1c-984e-8e69b663b311",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$7PBJ8IZ7cRIwdNJyfrQaFutSpzx8/0eEL9LQz3c9mugH8bKttcpEy",
+      "balance": 0,
+      "createdAt": "2025-07-01T18:58:37.847Z",
+      "modifiedAt": "2025-07-01T18:58:37.847Z"
+    },
+    {
+      "id": "FsPjAWuVk",
+      "uuid": "74bfb2bc-1788-488f-a0a3-7b89761192a5",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$9DmrvhqJZbIvUwmk0kGcquvB1QHxGD7vCGvD9c7bDulPPi2A7LMvC",
+      "balance": 0,
+      "createdAt": "2025-07-01T19:01:42.069Z",
+      "modifiedAt": "2025-07-01T19:01:42.069Z"
+    },
+    {
+      "id": "XwqV01Z0i",
+      "uuid": "91d42804-3a41-4adb-a6dc-6d9a6eb61f1c",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$M2FM0/z8P7s4w1bSbQZRvuAb8vfg/Y.ZXEcAdW40X88uUxwVrZ.i6",
+      "balance": 0,
+      "createdAt": "2025-07-01T19:05:50.724Z",
+      "modifiedAt": "2025-07-01T19:05:50.724Z"
+    },
+    {
+      "id": "dDdhyPIBK",
+      "uuid": "456aa4fd-40d3-4c48-aaa5-d888b043a23e",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$6f8bSXodsloC//Odk9lPBOMc8eYvsdEeW8Wq2dhvBhDcW.vm1DPNy",
+      "balance": 0,
+      "createdAt": "2025-07-01T19:06:20.268Z",
+      "modifiedAt": "2025-07-01T19:06:20.268Z"
+    },
+    {
+      "id": "9jL9YDrS9",
+      "uuid": "86d22d8f-6567-4ec7-af9b-d4c39e0c0e56",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$sNNE1sgI8KG3hL8/rngj5OnWWtiBUktG0/10WtiOYbcds77o4tRJa",
+      "balance": 0,
+      "createdAt": "2025-07-01T19:07:20.766Z",
+      "modifiedAt": "2025-07-01T19:07:20.766Z"
     }
   ],
   "contacts": [
