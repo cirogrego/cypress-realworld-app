@@ -184,6 +184,17 @@
       "balance": 0,
       "createdAt": "2025-07-01T18:32:49.511Z",
       "modifiedAt": "2025-07-01T18:32:49.511Z"
+    },
+    {
+      "id": "R3OlIgvVt",
+      "uuid": "d76bc872-ec1b-4f2d-8ef8-6222511f302a",
+      "firstName": "Ciro",
+      "lastName": "Dutra",
+      "username": "cirogrego",
+      "password": "$2a$10$1xlr.jdPGgmMO9jGcallHeBU1xJV6T55CLZoLJehiSufsktKWZWje",
+      "balance": 0,
+      "createdAt": "2025-07-01T18:37:03.709Z",
+      "modifiedAt": "2025-07-01T18:37:03.709Z"
     }
   ],
   "contacts": [

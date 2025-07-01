@@ -1,4 +1,5 @@
 describe('Real World app', () => {
+    
   it('Login - Success', () => {
     cy.visit('http://localhost:3000/signin')
     cy.get('#username').type('cirogrego')
@@ -27,7 +28,7 @@ describe('Real World app', () => {
 
 })
 
-it.only('Login - New User Fail', () => {
+it('Login - New User Fail', () => {
     cy.visit('http://localhost:3000/signin')
     cy.get('[href="/signup"]').click()
     cy.get('#firstName').type('Donald')
