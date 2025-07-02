@@ -1,0 +1,27 @@
+{
+    "userSuccess": {
+    "username": "Arvilla_Hegmann",
+    "password": "s3cret"
+  },
+
+    "userFail": {
+      "username": "Test",
+      "password": "Test"
+    },
+
+    "newUser": {
+      "firstname": "Ciro",
+      "lastname": "Dutra",
+      "username": "cirogrego",
+      "password": "123456",
+      "confirmpassword": "123456"
+    },
+
+    "newUserFail": {
+      "firstname": "Ciro",
+      "lastname": "Dutra",
+      "username": "cirogrego",
+      "password": "123456",
+      "confirmpassword": "1234567"
+    }
+  }
