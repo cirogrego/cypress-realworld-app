@@ -22,8 +22,7 @@ describe('Real World app', () => {
     cy.get(selectorList.passwordField).type(userData.userSuccess.password)
     cy.get(selectorList.rememberField).click()
     cy.get(selectorList.loginButton).click()
-  })
-
+   })
 
  it('Login - Fail', () => {
     cy.visit('http://localhost:3000/signin')
@@ -42,7 +41,6 @@ describe('Real World app', () => {
     cy.get(selectorList.passwordField).type(userData.newUser.password)
     cy.get(selectorList.confirmpasswordField).type(userData.newUser.confirmpassword)
     cy.get(selectorList.signupButton).click()
-
 })
 
 it('Login - New User Fail', () => {
@@ -58,4 +56,6 @@ it('Login - New User Fail', () => {
 
 })
 
-})
+
+
+  }) 
