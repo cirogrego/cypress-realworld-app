@@ -1,19 +1,28 @@
 describe('Real World app', () => {
 
+  const selectorList = {
+    usernameField:"#username",
+    passwordField:"#password",
+    rememberField:'[name="remember"]',
+    loginButton:'[data-test="signin-submit"]',
+
+
+  }
+
   it('Login - Success', () => {
     cy.visit('http://localhost:3000/signin')
-    cy.get('#username').type('Dina20')
-    cy.get('#password').type('s3cret')
-    cy.get('[name="remember"]').click()
-    cy.get('[data-test="signin-submit"]').click()
+    cy.get(selectorList.usernameField).type('Arvilla_Hegmann')
+    cy.get(selectorList.passwordField).type('s3cret')
+    cy.get(selectorList.rememberField).click()
+    cy.get(selectorList.loginButton).click()
   })
-})
+
 
  it('Login - Fail', () => {
     cy.visit('http://localhost:3000/signin')
-    cy.get('#username').type('Test')
-    cy.get('#password').type('Test')
-    cy.get('[data-test="signin-submit"]').click()
+    cy.get(selectorList.usernameField).type('Test')
+    cy.get(selectorList.passwordField).type('Test')
+    cy.get(selectorList.loginButton).click()
     cy.get('[role="alert"]')
   })
 
@@ -39,5 +48,7 @@ it('Login - New User Fail', () => {
     cy.get('#confirmPassword').type('12345')
     cy.get('#confirmPassword-helper-text').contains('Password does not match')
     
+
+})
 
 })
