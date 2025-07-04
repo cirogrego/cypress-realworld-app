@@ -14,7 +14,7 @@ class LoginPage {
     }
 
     accessLoginPage() {
-        cy.visit('http://localhost:3000/signin')
+        cy.visit('/signin')
     }
 
     loginWithUser(username,password) {

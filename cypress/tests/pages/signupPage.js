@@ -16,7 +16,7 @@ class SignupPage {
     }
 
     accessSignupPage() {
-        cy.visit('http://localhost:3000/signin')
+        cy.visit('/signin')
     }
 
     signupWithUserSuccess(firstname,lastname,username,password,confirmpassword) {
