@@ -11,15 +11,15 @@ describe('Transaction - Real World app', () => {
 
     }
 
-    it('Transaction - Success', () => {
+    it('Transaction - Positive Balance', () => {
         transactionPage.accesstransactionPage()
         transactionPage.accesstransactionWithUser(userData.userSuccess.username,userData.userSuccess.password)
         
     })
 
-     it('Transaction - Fail', () => {
+     it('Transaction - No Balance', () => {
         transactionPage.accesstransactionPage()
-        transactionPage.accesstransactionWithUser(userData.userSuccess.username,userData.userSuccess.password)
+        transactionPage.accesstransactionWithUser(userData.userTransactionNoHistory.username,userData.userTransactionNoHistory.password)
         transactionPage.checkAccountBalanceField()
 
 })

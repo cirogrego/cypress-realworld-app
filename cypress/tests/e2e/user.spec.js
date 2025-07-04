@@ -11,7 +11,7 @@ describe('Login - Real World app', () => {
     
   }
 
-  it.only('Login - Success', () => {
+  it('Login - Success', () => {
     loginPage.accessLoginPage()
     loginPage.loginWithUser(userData.userSuccess.username,userData.userSuccess.password)
    
