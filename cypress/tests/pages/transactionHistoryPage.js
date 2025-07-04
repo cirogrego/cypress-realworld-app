@@ -6,6 +6,7 @@ class TransactionHistoryPage {
             passwordField:"#password",
             rememberField:'[name="remember"]',
             signinButton:'[data-test="signin-submit"]',
+            friendsButton: '[href="/contacts"]',
             mineButton:'[href="/personal"]',
             nameDetail:'[data-test="transaction-sender-jXGkMr8pw"]',
             transactionDetail:'[data-test="transaction-detail-header"]',
@@ -35,7 +36,7 @@ class TransactionHistoryPage {
         cy.get(this.selectorList().passwordField).type(password)
         cy.get(this.selectorList().rememberField).click()
         cy.get(this.selectorList().signinButton).click()
-        cy.get(this.selectorList().mineButton).click()
+        cy.get(this.selectorList().friendsButton).click()
     }
         
 
