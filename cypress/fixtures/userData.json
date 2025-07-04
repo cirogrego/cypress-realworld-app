@@ -1,7 +1,7 @@
 {
     "userSuccess": {
-    "username": "Judah_Dietrich50",
-    "password": "s3cret"
+      "username": "Judah_Dietrich50",
+      "password": "s3cret"
   },
 
     "userFail": {
@@ -22,7 +22,7 @@
       "lastname": "Dutra",
       "username": "cirogrego",
       "password": "123456",
-      "confirmpassword": "1234567"
+      "confirmpassword": "12345678"
     }
   }
 
