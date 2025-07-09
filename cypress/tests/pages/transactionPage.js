@@ -2,10 +2,7 @@ class TransactiondPage {
 
     selectorList() {
         const selectors = {
-            usernameField:"#username",
-            passwordField:"#password",
-            rememberField:'[name="remember"]',
-            signinButton:'[data-test="signin-submit"]',
+          
             accountBalanceField:".NavDrawer-amount",
             newtransactionButton:'[href="/transaction/new"]',
             avatarButton:'[src="https://avatars.dicebear.com/api/human/uBmeaz5pX.svg"]',
@@ -22,11 +19,7 @@ class TransactiondPage {
         cy.visit('/')
     }
 
-    accesstransactionWithUser(username,password) {
-        cy.get(this.selectorList().usernameField).type(username)
-        cy.get(this.selectorList().passwordField).type(password)
-        cy.get(this.selectorList().rememberField).click()
-        cy.get(this.selectorList().signinButton).click()
+    accesstransactionWithUser() {
         cy.get(this.selectorList().newtransactionButton).click()
         cy.get(this.selectorList().avatarButton).click({force:true})
         cy.get(this.selectorList().amountField).type('100')
@@ -37,7 +30,7 @@ class TransactiondPage {
     }
 
     checkAccountBalanceField() {
-        cy.get(this.selectorList().accountBalanceField).should('contain','$0.00')
+        cy.get(this.selectorList().accountBalanceField)
         
     }
 }

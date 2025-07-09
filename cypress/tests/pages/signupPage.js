@@ -19,24 +19,27 @@ class SignupPage {
         cy.visit('/signin')
     }
 
-    signupWithUserSuccess(firstname,lastname,username,password,confirmpassword) {
+    signupWithUser(firstname,lastname,username,password,confirmpassword) {
         cy.get(this.selectorList().signupField).click()
         cy.get(this.selectorList().firstnameField).type(firstname)
         cy.get(this.selectorList().lastnameField).type(lastname)
         cy.get(this.selectorList().userNameField).type(username)
         cy.get(this.selectorList().passwordField).type(password)
         cy.get(this.selectorList().confirmpasswordField).type(confirmpassword)
-        cy.get(this.selectorList().signupButton).click()
+        
+
+    }
+    
+    checkSingupInvalid() {
+        cy.get(this.selectorList().confirmpasswordFieldError).contains('Password does not match')
+        
     }
 
-    signupWithUserFail(firstname,lastname,username,password,confirmpassword) {
-        cy.get(this.selectorList().signupField).click()
-        cy.get(this.selectorList().firstnameField).type(firstname)
-        cy.get(this.selectorList().lastnameField).type(lastname)
-        cy.get(this.selectorList().userNameField).type(username)
-        cy.get(this.selectorList().passwordField).type(password)
-        cy.get(this.selectorList().confirmpasswordField).type(confirmpassword)
-        cy.get(this.selectorList().confirmpasswordFieldError).contains('Password does not match')   
+    saveform() {
+        cy.get(this.selectorList().signupButton).click()
+
     }
-}
+           
+    }
+
 export default SignupPage

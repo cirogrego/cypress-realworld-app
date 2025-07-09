@@ -25,7 +25,7 @@ class LoginPage {
     }
     
     checkAccessInvalid() {
-        cy.get(this.selectorList().wrongcredentialalert)
+        cy.get(this.selectorList().wrongcredentialalert).contains('Username or password is invalid')
     }
 
 

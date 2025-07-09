@@ -2,15 +2,12 @@ class TransactionHistoryPage {
 
     selectorList() {
         const selectors = {
-            usernameField:"#username",
-            passwordField:"#password",
-            rememberField:'[name="remember"]',
-            signinButton:'[data-test="signin-submit"]',
             friendsButton: '[href="/contacts"]',
             mineButton:'[href="/personal"]',
-            nameDetail:'[data-test="transaction-sender-jXGkMr8pw"]',
+            nameDetail:"[data-test='transaction-sender-f5QeIHeqw']",
             transactionDetail:'[data-test="transaction-detail-header"]',
-            commentField:'[name="content"]'
+            commentField:'[name="content"]',
+            noTransactionName:'.css-mpyo7s-MuiTypography-root'
 
         }
         return selectors
@@ -20,23 +17,16 @@ class TransactionHistoryPage {
         cy.visit('/')
     }
 
-    accesstransactionHistoryPageWithUser(username,password) {
-        cy.get(this.selectorList().usernameField).type(username)
-        cy.get(this.selectorList().passwordField).type(password)
-        cy.get(this.selectorList().rememberField).click()
-        cy.get(this.selectorList().signinButton).click()
+    accesstransactionHistoryPageWithUser() {
         cy.get(this.selectorList().mineButton).click()
         cy.get(this.selectorList().nameDetail).click()
         cy.get(this.selectorList().transactionDetail).click()
         cy.get(this.selectorList().commentField).type('test comment')
     }
 
-    accesstransactionNoHistoryPageWithUser(username,password) {
-         cy.get(this.selectorList().usernameField).type(username)
-        cy.get(this.selectorList().passwordField).type(password)
-        cy.get(this.selectorList().rememberField).click()
-        cy.get(this.selectorList().signinButton).click()
+    accesstransactionNoHistoryPageWithUser() {
         cy.get(this.selectorList().friendsButton).click()
+        cy.get(this.selectorList().noTransactionName).contains('No Transactions')
     }
         
 
